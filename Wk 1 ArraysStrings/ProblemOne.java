@@ -1,14 +1,15 @@
-//Implement an algorithm to determine if a string has all unique characters. What if you cannot
-// use additional data structures?
+//"Is Unique": Implement an algorithm to determine if a string has all unique characters.
+// What if you cannot use additional data structures?
 import java.util.HashSet;
 
 public class ProblemOne {
 
+//  version without additional data structures, O(n^2) runtime
   public static Boolean hasDuplicate(String inputString) {
     for (int i=0; i<inputString.length(); i++) { //O(n)
       for (int j=i+1; j<inputString.length(); j++) { //O(n)
         char resultI = inputString.charAt(i); //O(1)
-        char resultJ = inputString.charAt(j);
+        char resultJ = inputString.charAt(j); //O(1)
         if (resultI == resultJ) {
           return true;
         }
@@ -16,6 +17,8 @@ public class ProblemOne {
     } return false;
   }
 
+//  version with additional data structure (hashmap implemented w/ hashset)
+//  optimizes runtime -- O(n) because sets have constant lookup
   public static Boolean hasDuplicateHash(String inputString) {
     HashSet<Character> hashsetifiedInput = new HashSet<>();
     for (int i=0; i<inputString.length(); i++) {
