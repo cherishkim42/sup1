@@ -1,5 +1,7 @@
 //"Palindrome Permutation":
 
+import java.util.List;
+
 public class ProblemOne {
 
   public static void main(String[] args) {
@@ -10,5 +12,7 @@ public class ProblemOne {
     newNode.appendToTail(4);
     String stringify = newNode.toString();
     System.out.println(stringify);
+    List otherStringify = newNode.newToString();
+    System.out.println(otherStringify);
   }
 }
