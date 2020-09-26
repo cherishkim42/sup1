@@ -16,9 +16,8 @@ public class ProblemTwo {
     hashSetData.add(currentNode.data); //def need to add th is
     //loop through the linked list by saying "while current/next != null"
     while (nextNode != null) {
-      //currentNode's been updated so it's ok
       if (hashSetData.contains(nextNode.data)) {
-        currentNode.next = nextNextNode;
+        currentNode.next = nextNextNode; //currentNode has been updated so this is ok
       }
       else {
         hashSetData.add(currentNode.data);
@@ -36,11 +35,11 @@ public class ProblemTwo {
     newNode.appendToTail(1);
     newNode.appendToTail(2);
     newNode.appendToTail(3);
-    String stringify = newNode.toString();
-    List listify = newNode.newToString();
+//    String stringify = newNode.toString();
+//    List listify = newNode.newToString();
     fixedLinkedList(newNode);
-    List reallyListify = newNode.newToString();
-    System.out.println(reallyListify);
+    List uniqueNodeList = newNode.intToString();
+    System.out.println(uniqueNodeList);
   }
 
 }

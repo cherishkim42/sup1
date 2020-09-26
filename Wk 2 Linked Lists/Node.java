@@ -41,7 +41,7 @@ public class Node {
     return Integer.toString(data);
   }
 
-  public List newToString() {
+  public List intToString() {
     List<String> nodeStuff = new ArrayList<String>();
     Node current = this;
     //nodeStuff.add(this.data);
