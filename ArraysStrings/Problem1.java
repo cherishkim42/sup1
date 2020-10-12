@@ -4,7 +4,7 @@ import java.util.HashSet;
 
 public class ProblemOne {
 
-//  version without additional data structures, O(n^2) runtime
+  //  version without additional data structures, O(n^2) runtime
   public static Boolean hasDuplicate(String inputString) {
     for (int i=0; i<inputString.length(); i++) { //O(n)
       for (int j=i+1; j<inputString.length(); j++) { //O(n)
@@ -17,7 +17,7 @@ public class ProblemOne {
     } return false;
   }
 
-//  version with additional data structure (hashmap implemented w/ hashset)
+  //  version with additional data structure (hashmap implemented w/ hashset)
 //  optimizes runtime -- O(n) because sets have constant lookup
   public static Boolean hasDuplicateHash(String inputString) {
     HashSet<Character> hashsetifiedInput = new HashSet<>();

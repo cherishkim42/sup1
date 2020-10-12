@@ -17,7 +17,7 @@ public class ProblemTwo {
       } else {
         inputDictionary.put((inputToArray[i]), 1);
       }
-      }
+    }
     return inputDictionary;
   }
 
