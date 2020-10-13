@@ -62,9 +62,9 @@ class AnimalShelter(object):
 
     def dequeue_any(self):
         if self.first_cat is not None and self.first_dog is None:
-            return self.dequeueCat()
+            return self.dequeue_cat()
         elif self.first_cat is None and self.first_dog is not None:
-            return self.dequeueDog()
+            return self.dequeue_dog()
         else:
             if self.first_cat.tracker_counter < self.first_dog.tracker_counter:
                 return self.dequeue_cat()
