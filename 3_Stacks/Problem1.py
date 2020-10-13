@@ -1,7 +1,9 @@
-'''Hello, future Cherish. Before running this file / testing it, make sure you have un-commented the requisite lines in your push and min method in stack.py.'''
+'''Hello, future Cherish. Before running/testing this file, make sure you have un-commented the requisite lines in your PUSH and MIN methods in stack.py.'''
 
 
 '''Design a stack w/ the following functions: push, pop, and min (the last of which returns the minimum element). All three should operate in constant time.'''
+
+#uses LinkedStack, not ArrayStack
 from stack import Stack
 
 #push -- already accounted for; runtime O(1)

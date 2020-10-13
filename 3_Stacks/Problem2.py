@@ -22,6 +22,7 @@ Pass in the head Node. (Build up like Node = whatever, then Node.push etc. etc. 
 The if __name__ == __main__ thing will merely pass in the STRING, NOT the node (this problem is a lil different from linked list problems in the Linked Lists folder).
 '''
 
+#uses LinkedStack, not ArrayStack
 from stack import Stack
 
 #input_string must be at least length 2

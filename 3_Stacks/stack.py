@@ -3,7 +3,7 @@
 from linkedlist import LinkedList
 
 """
-Use the LINKED LIST version of this to implement MIN
+Use the LINKED LIST version of this to implement MIN (for Problem1.py within this sub-directory).
 There is no way to get findMin down to O(1) runtime using the ArrayStack implementation.
 """
 
@@ -130,5 +130,5 @@ class ArrayStack(object):
 
 # Implement LinkedStack and ArrayStack above, then change the assignment below
 # to use each of your Stack implementations to verify they each pass all tests
-Stack = LinkedStack
-# Stack = ArrayStack
+# Stack = LinkedStack
+Stack = ArrayStack
